@@ -18,13 +18,13 @@ purposes.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/salah-mo/repository.git
+git clone https://github.com/salah-mo/Authentication.git
 ```
 
 2. Navigate to the project directory
 
 ```bash
-cd repository
+cd Authentication
 ```
 
 3. Build the project using Maven
