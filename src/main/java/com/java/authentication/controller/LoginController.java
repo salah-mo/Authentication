@@ -2,6 +2,7 @@ package com.java.authentication.controller;
 
 import com.java.authentication.service.TokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -40,7 +41,7 @@ public class LoginController {
 
             return ResponseEntity.ok(new AuthResponse(token));
         } catch (Exception e) {
-            return ResponseEntity.badRequest().body("Invalid username/password supplied");
+            return ResponseEntity.status(HttpStatus.MULTI_STATUS).body("Invalid username/password supplied");
         }
     }
 }
